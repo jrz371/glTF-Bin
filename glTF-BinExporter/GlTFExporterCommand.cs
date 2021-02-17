@@ -38,7 +38,7 @@ namespace glTF_BinExporter
                 return Result.Cancel;
             }
 
-            bool binary = GlTFUtils.IsFileGltfBinary(dialog.FileName);
+            bool binary = Utils.IsFileGltfBinary(dialog.FileName);
 
             var opts = new glTFExportOptions() { UseDracoCompression = false, DracoCompressionLevel = 10, DracoQuantizationBits = 16, UseBinary = binary };
 

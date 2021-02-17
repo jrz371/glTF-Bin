@@ -36,7 +36,7 @@ namespace glTF_BinExporter
 
         protected override WriteFileResult WriteFile(string filename, int index, RhinoDoc doc, FileWriteOptions options)
         {
-            bool binary = GlTFUtils.IsFileGltfBinary(filename);
+            bool binary = Utils.IsFileGltfBinary(filename);
 
             glTFExportOptions gltfOptions = new glTFExportOptions();
             gltfOptions.UseBinary = binary;
